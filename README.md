@@ -1,4 +1,5 @@
-# scrapy-tutorial
+# scrapy-crawler
+Warning: This project is 2 years old, its parser's logic need to be updated
 
 # Install scrapy via virtualenv
 
@@ -15,14 +16,14 @@ pip install -r requirements.txt
 # List spiders
 scrapy list
 
-# Crawl dmoz and store items into file
-scrapy crawl dmoz -o items.json
+# Crawl baomoi and store items into file
+scrapy crawl baomoi -o items.json
 ```
 
 
 ```sh
 # For development: Limit page crawled
-scrapy crawl dmoz -s CLOSESPIDER_PAGECOUNT=1
+scrapy crawl baomoi -s CLOSESPIDER_PAGECOUNT=1
 
-scrapy crawl dmoz -s CLOSESPIDER_PAGECOUNT=1 -o items.json
+scrapy crawl baomoi -s CLOSESPIDER_PAGECOUNT=1 -o items.json
 ```

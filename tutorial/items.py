@@ -18,4 +18,15 @@ class DmozItem(scrapy.Item):
     link = scrapy.Field()
     desc = scrapy.Field()
 
-
+class BaomoiItem(scrapy.Item):
+    title = scrapy.Field()
+    link = scrapy.Field()
+    desc = scrapy.Field()
+    source = scrapy.Field()
+    createdAt = scrapy.Field()
+    updatedAt = scrapy.Field()
+    content = scrapy.Field()
+        
+class BaomoiIntro(scrapy.Item):
+    fid = scrapy.Field()
+    desc = scrapy.Field()
